@@ -40,7 +40,7 @@ class SelectionMenu:
                 self.selection = (self.selection - 1) % len(self.items)
             elif key == curses.KEY_DOWN:
                 self.selection = (self.selection + 1) % len(self.items)
-            elif key == 10: # Enter
+            elif key == 10:
                 return self.selection
-            elif key == ord('q') or key == 27: # q or Esc
+            elif key == ord('q') or key == 27:
                 return -1
